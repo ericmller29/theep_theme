@@ -1,5 +1,19 @@
 <?php
 
+/*
+* Functions.php can end up a gross mess. So I've "organized" it. You'll find the functionality under "./core".
+* I've been trying to group the classes based on similar things.
+* Ex: Shortcodes, Styles, Scripts
+*/
+include 'core/globals.php';
+
+include 'core/removes.php';
+include 'core/scripts.php';
+
+/*
+* The rest of this doc is specific to Timber, not sure if I'll need it so I'm leaving it here.
+*/
+
 if ( ! class_exists( 'Timber' ) ) {
 	add_action( 'admin_notices', function() {
 			echo '<div class="error"><p>Timber not activated. Make sure you activate the plugin in <a href="' . esc_url( admin_url( 'plugins.php#timber' ) ) . '">' . esc_url( admin_url( 'plugins.php' ) ) . '</a></p></div>';

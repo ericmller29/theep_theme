@@ -7,7 +7,22 @@
 {% endblock %}
 
 	<body class="{{body_class}}" data-template="base.twig">
-		<header class="header" >
+		<header class="header">
+			<div class="container">
+				<div class="logo text-center">
+					<img src="{{ site.theme.uri }}/dist/img/logo.svg" width="130">
+				</div>
+
+				<nav class="navbar">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">Home</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+<!-- 		<header class="header" >
 			{% block header %}
 				<div class="wrapper">
 					<h1 class="hdr-logo" role="banner">
@@ -15,10 +30,10 @@
 					</h1>
 					<nav id="nav-main" class="nav-main" role="navigation">
 						{% include "menu.twig" with {'menu': menu.get_items} %}
-					</nav><!-- #nav -->
+					</nav>
 				</div>
 			{% endblock %}
-		</header>
+		</header> -->
 
 		<section id="content" role="main" class="content-wrapper">
 			{% if title %}<h1>{{title}}</h1>{% endif %}
