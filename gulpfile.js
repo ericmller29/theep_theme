@@ -16,7 +16,8 @@ gulp.task('sass', () => {
 	return gulp.src('src/sass/**/*.scss')
 		.pipe(sass.sync({
 			includePaths: [
-				config.bootstrap.css
+				config.bootstrap.css,
+				'bower_components/font-awesome/scss'
 			]
 		}).on('error', sass.logError))
 		.pipe(notify('Sass has been compiled and moved.'))
@@ -25,6 +26,11 @@ gulp.task('sass', () => {
 
 gulp.task('js', () => {
 
+});
+
+gulp.task('fonts', () => {
+	return gulp.src('bower_components/font-awesome/fonts/*.*')
+		.pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('vendor', () => {
@@ -47,4 +53,4 @@ gulp.task('watch', () => {
 	// gulp.watch('src/js/**.*.js', ['js']);
 });
 
-gulp.task('default', ['sass', 'images', 'watch', 'vendor']);
+gulp.task('default', ['sass', 'images', 'watch', 'vendor', 'fonts']);
