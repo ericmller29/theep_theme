@@ -8,33 +8,36 @@
 
 	<body class="{{body_class}}" data-template="base.twig">
 		<header class="header">
-			<div class="container">
-				<div class="logo text-center">
-					<img src="{{ site.theme.uri }}/dist/img/logo.svg" width="130">
-				</div>
+			<nav class="navbar">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+							<span class="sr-only">Toggle Menu</span>
+							<span class="navbar-toggle-title">Menu</span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="{{ site.theme.uri }}/dist/img/logo.svg"></a>
+					</div>
 
-				<nav class="navbar">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Work</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li class="navbar-search">
-							<a href="#"><i class="fa fa-search"></i></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="main-nav">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">Work</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
 		</header>
 <!-- 		<header class="header" >
 			{% block header %}
@@ -48,20 +51,9 @@
 				</div>
 			{% endblock %}
 		</header> -->
-
-		<section id="content" role="main" class="content-wrapper">
-			{% if title %}<h1>{{title}}</h1>{% endif %}
-			<div class="wrapper {{sidebar_class}}">
-				{% block content %}
-					Sorry, no content
-				{% endblock %}
-			</div>
-			{% if sidebar %}
-				<aside class="layout-sidebar">
-					{{sidebar}}
-				</aside>
-			{% endif %}
-		</section>
+		{% block content %}
+			Sorry, no content
+		{% endblock %}
 
 		{% block footer %}
 			<footer id="footer">

@@ -1,0 +1,68 @@
+.navbar-nav{
+	margin-top: 0;
+	font-family: $font-family-nav;
+
+	@media (min-width: $screen-sm-min){
+		border-top: solid 1px $gray-lighter;
+		text-align: center;
+		border-bottom: solid 1px $gray-lighter;
+		width: 100%;
+	}
+
+	li{
+		padding: 15px;
+		border-top: solid 1px $gray-lighter;
+		display: block;
+		background-color: transparent;
+		position: relative;
+
+		@media (min-width: $screen-sm-min){
+			border-top: none;
+			display: inline-block;
+			padding: 15px 15px 10px;
+			float: none;
+		}
+
+		&.active{
+			background: $brand-primary;
+
+			@media (min-width: $screen-sm-min){
+				background: transparent;
+
+				&:after{
+					opacity: 1;
+				}
+			}
+		}
+		@media (min-width: $screen-sm-min){
+			&:after{
+				display: block;
+				content: '';
+				height: 3px;
+				background: $brand-primary;
+				width: 100%;
+				position: relative;
+				bottom: -10px;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+		}
+	}
+
+	& > li > a{
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 0;
+		color: #444;
+
+		&:hover{
+			background-color: transparent;
+		}
+	}
+	& > li:hover:after{
+		opacity: 1;
+	}
+	& > li:hover a{
+		background-color: transparent;
+	}
+}

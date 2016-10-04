@@ -1,0 +1,10 @@
+.navbar-header{
+	position: relative;
+
+	@media (min-width: $screen-sm-min){
+		float: none;
+		clear: both;
+		width: 100%;
+		text-align: center;
+	}
+}

@@ -20,7 +20,5 @@ if ( ! class_exists( 'Timber' ) ) {
 $context = Timber::get_context();
 
 $templates = array( 'index.twig' );
-if ( is_home() ) {
-	array_unshift( $templates, 'homepage.twig' );
-}
+
 Timber::render( $templates, $context );

@@ -1,0 +1,39 @@
+.navbar-toggle{
+	padding: 0;
+	border: none;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+
+	&:hover, &:focus{
+		background-color: transparent;
+	}
+
+	.navbar-toggle-title{
+		font-family: $font-family-serif;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		position: relative;
+		padding-right: 30px;
+
+		&:after{
+			display: block;
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: url(../img/icons/menu_lines_active.svg) no-repeat;
+			background-size: 100%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+		}
+	}
+
+	&.collapsed .navbar-toggle-title:after{
+		background: url(../img/icons/menu_lines.svg) no-repeat;
+		background-size: 100%;
+	}
+}

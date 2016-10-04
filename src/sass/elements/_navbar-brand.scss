@@ -1,0 +1,13 @@
+.navbar-brand{
+	float: left;
+
+	@media (min-width: $screen-sm-min){
+		display: inline-block;
+		float: none;
+		height: 130px;
+		clear: both;
+	}
+	img{
+		height: 100%;
+	}
+}

@@ -29,7 +29,7 @@ $brand-primary:         #E9C000; // #337ab7
 // //** Background color for `<body>`.
 // $body-bg:               #fff !default;
 // //** Global text color on `<body>`.
-// $text-color:            $gray-dark !default;
+$text-color:            #444444;
 
 // //** Global textual link color.
 // $link-color:            $brand-primary !default;
@@ -363,7 +363,7 @@ $font-size-base:          16px;
 // //##
 
 // // Basics of a navbar
-// $navbar-height:                    50px !default;
+$navbar-height:                    80px;
 // $navbar-margin-bottom:             $line-height-computed !default;
 // $navbar-border-radius:             $border-radius-base !default;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;

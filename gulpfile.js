@@ -35,7 +35,7 @@ gulp.task('fonts', () => {
 
 gulp.task('vendor', () => {
 	return gulp.src([
-		config.bootstrap.js + '/collapse.js'
+		config.bootstrap.js + '/../bootstrap.min.js'
 	])
 	.pipe(concat('vendor.js'))
 	.pipe(notify('Vendor scripts have been moved.'))

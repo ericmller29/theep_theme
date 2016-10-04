@@ -3,6 +3,7 @@
 
 @import "bootstrap/mixins";
 @import "bootstrap/normalize";
+@import "bootstrap/component-animations";
 @import "bootstrap/type";
 
 @import "bootstrap/grid";
@@ -11,13 +12,18 @@
 @import "bootstrap/navbar";
 @import "bootstrap/navs";
 @import "bootstrap/buttons";
+@import "bootstrap/jumbotron";
 
 @import "font-awesome";
 
 @import "base";
 
-@import "elements/logo";
-
+@import "modules/header";
+@import "modules/jumbotron";
+@import "modules/section";
 @import "modules/navbar";
-@import "elements/navbar-nav";
-@import "elements/navbar-search";
+@import "modules/navbar-nav";
+@import "modules/navbar-header";
+
+@import "elements/navbar-brand";
+@import "elements/navbar-toggle";

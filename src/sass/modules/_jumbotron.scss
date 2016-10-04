@@ -1,0 +1,21 @@
+.jumbotron{
+	background: transparent;
+
+	h1{
+		font-size: 34px;
+
+		@media (min-width: $screen-sm-min) { 
+			font-size: 63px;
+		}
+	}
+
+	p{
+		margin-top: 40px;
+		line-height: 30px;
+		font-size: 1em;
+
+		@media (min-width: $screen-sm-min){
+			font-size: 1.1em;
+		}
+	}
+}
