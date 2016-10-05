@@ -1,0 +1,50 @@
+.btn{
+	border-radius: 0;
+	text-decoration: none;
+	position: relative;
+	padding: 13px;
+
+	svg{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&.icon-right{
+		padding-right: 45px;
+	}
+	&.icon-left{
+		padding-left: 45px;
+	}
+
+	&.icon-right svg{
+		right: 13px;
+	}
+
+	&.icon-left svg{
+		left: 13px;
+	}
+
+	&.btn-default{
+		background: $brand-primary;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.1em;
+		border: none;
+
+		&:after{
+			content: '';
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			right: 2px;
+			bottom: 2px;
+			border: 2px solid #fff;
+		}
+
+		&:hover{
+			border: none;
+		}
+	}
+}

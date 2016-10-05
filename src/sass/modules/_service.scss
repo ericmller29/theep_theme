@@ -1,17 +1,49 @@
 .service{
 	display: block;
-	min-height: 150px;
+	min-height: 350px;
 	color: #fff;
+	position: relative;
+	margin-bottom: 50px;
+
+	&:after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0.22;
+		background-repeat: no-repeat;
+		background-size: 90%;
+		background-position: -30px 80px;
+
+		@media (min-width: $screen-sm-min){
+			background-size: 50%;
+			background-position: -30px -50%;
+		}
+	}
 
 	&.yellow{
-		background: #E9C000;
+		background: rgba(#E9C000, 0.65);
+
+		&:after{
+			background-image: url(../img/icons/diamond_icon.svg);
+		}
 	}
 
 	&.green{
-		background: #8ACA72;
+		background: rgba(#8ACA72, 0.65);
+
+		&:after{
+			background-image: url(../img/icons/layers_icon.svg);
+		}
 	}
 
 	&.blue{
-		background: #5AACF0;
+		background: rgba(#5AACF0, 0.65);
+
+		&:after{
+			background-image: url(../img/icons/settings_icon.svg);
+		}
 	}
 }
