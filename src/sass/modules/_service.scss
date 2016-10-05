@@ -16,11 +16,16 @@
 		background-repeat: no-repeat;
 		background-size: 90%;
 		background-position: -30px 80px;
+		transition: background-size 0.3s;
 
 		@media (min-width: $screen-sm-min){
 			background-size: 50%;
 			background-position: -30px -50%;
 		}
+	}
+
+	&:hover:after{
+		background-size: 55%;
 	}
 
 	&.yellow{
