@@ -25,4 +25,13 @@ section {
 			font-size: 3.5em;
 		}
 	}
+
+	p{
+		line-height: 30px;
+		margin: 0 0 30px;
+	}
+
+	&:first-child{
+		margin-top: 0;
+	}
 }

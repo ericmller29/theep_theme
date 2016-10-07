@@ -19,7 +19,9 @@ gulp.task('sass', () => {
 				config.bootstrap.css,
 				'bower_components/font-awesome/scss'
 			]
-		}).on('error', (err) => { return notify().write(err); }))
+		}).on('error', notify.onError(function (error) {
+   			return error;
+		})))
 		.pipe(notify('Sass has been compiled and moved.'))
 		.pipe(gulp.dest('./dist/css'));
 });
