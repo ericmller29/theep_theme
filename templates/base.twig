@@ -13,8 +13,15 @@
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-							<span class="sr-only">Toggle Menu</span>
-							<span class="navbar-toggle-title">Menu</span>
+							<div class="navbar-toggle-title">
+								Menu
+
+								<div class="hamburg">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
 						</button>
 						<a class="navbar-brand" href="#"><img src="{{ site.theme.uri }}/dist/img/logo.svg"></a>
 					</div>
@@ -56,8 +63,10 @@
 		{% endblock %}
 
 		{% block footer %}
-			<footer id="footer">
-				{% include 'footer.twig' %}
+			<footer class="footer">
+				<div class="container">
+					{% include 'footer.twig' %}
+				</div>
 			</footer>
 			{{ function('wp_footer') }}
 		{% endblock %}

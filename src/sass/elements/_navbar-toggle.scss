@@ -17,23 +17,28 @@
 		font-size: 1.2em;
 		position: relative;
 		padding-right: 30px;
+		padding-top: 3px;
 
-		&:after{
-			display: block;
-			content: '';
-			width: 20px;
-			height: 20px;
-			background: url(../img/icons/menu_lines_active.svg) no-repeat;
-			background-size: 100%;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			right: 0;
-		}
+		// &:after{
+		// 	display: block;
+		// 	content: '';
+		// 	width: 20px;
+		// 	height: 20px;
+		// 	background: url(../img/icons/menu_lines_active.svg) no-repeat;
+		// 	background-size: 100%;
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	transform: translateY(-50%);
+		// 	right: 0;
+		// }
 	}
 
-	&.collapsed .navbar-toggle-title:after{
-		background: url(../img/icons/menu_lines.svg) no-repeat;
-		background-size: 100%;
+	&:not(.collapsed) .hamburg span{
+		width: 20px;
 	}
+
+	// &.collapsed .navbar-toggle-title:after{
+	// 	background: url(../img/icons/menu_lines.svg) no-repeat;
+	// 	background-size: 100%;
+	// }
 }

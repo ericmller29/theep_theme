@@ -1,9 +1,28 @@
 .service{
 	display: block;
-	min-height: 350px;
+	min-height: 250px;
 	color: #fff;
 	position: relative;
-	margin-bottom: 50px;
+	padding: 20px;
+	font-size: 1.1em;
+
+	@media (min-width: $screen-sm-min){
+		font-size: 1.2em;
+	}
+
+	@media (min-width: $screen-lg-min){
+		min-height: 300px;
+	}
+
+	h3{
+		font-size: 2.5em;
+		text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.7);
+	}
+
+	p{
+		text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.7);
+		margin-top: 0;
+	}
 
 	&:after{
 		content: '';

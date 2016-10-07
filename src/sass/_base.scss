@@ -7,7 +7,16 @@ html,body{
 	color: $text-color;
 }
 html {
-  box-sizing: border-box;
+  	box-sizing: border-box;
+  	min-height: 100%;
+  	position: relative;
+}
+body{
+	margin-bottom: 150px;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 100px;
+	}
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -16,6 +25,5 @@ h1,h2,h3,h4,h5,h6{
 	font-family: $font-family-serif;
 }
 h2{
-	color: $gray-lighter;
 	margin-bottom: 20px;
 }
