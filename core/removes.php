@@ -7,7 +7,6 @@ class Removes {
 		* Remove all those dumbass emojis
 		*/
 		add_action('init', array($this, 'removeDumbassEmojis'));
-		if ( !is_admin() ) wp_deregister_script('jquery');
 	}
 
 	function removeDumbassEmojis(){

@@ -1,5 +1,5 @@
 <?php
-
+require_once 'class-tgm-plugin-activation.php';
 /*
 * Functions.php can end up a gross mess. So I've "organized" it. You'll find the functionality under "./core".
 * I've been trying to group the classes based on similar things.
@@ -9,6 +9,8 @@ include 'core/globals.php';
 
 include 'core/removes.php';
 include 'core/scripts.php';
+include 'core/theme_settings.php';
+include 'core/plugins.php';
 
 /*
 * The rest of this doc is specific to Timber, not sure if I'll need it so I'm leaving it here.

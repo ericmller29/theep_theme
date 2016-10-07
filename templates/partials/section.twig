@@ -1,0 +1,17 @@
+<div class="
+	{% if item.full_width %}container-fluid{% else %}container{% endif %}
+	{% if not item.gutters %}no-gutters{% endif %}
+">
+	<section>
+		<div class="row{% if not item.gutters %} no-gutters{% endif %}">
+			<div class="col-xs-12">
+				<h2 class="text-center">{{ item.title }}</h2>
+			</div>
+			{% for column in item.columns %}
+				<div class="{{ column.class }}">
+					{{ column.content }}
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+</div>

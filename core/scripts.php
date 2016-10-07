@@ -9,8 +9,10 @@ class Scripts {
 		* Include jQuery the right way. Ensures there's only one version and it takes it
 		* from whatever I specify!
 		*/
-		$this->includeJquery();
-		$this->includeVendors();
+		// $this->includeJquery();
+		// $this->includeVendors();
+		add_action('wp_loaded', array( $this, 'includeJquery' ) );
+		add_action('wp_loaded', array( $this, 'includeVendors' ) );
 	}
 
 	function includeJquery() {

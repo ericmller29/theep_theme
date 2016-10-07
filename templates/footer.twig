@@ -1,18 +1,18 @@
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<div class="copyright">
-			&copy; Some Company. {{"now"|date('Y')}}.
+			{{ settings.epco_copyright | replace({ '%year%': "now"|date('Y') }) }}
 		</div>
 	</div>
 	<div class="col-xs-12 col-sm-6">
 		<ul class="social-icons">
 			<li>
-				<a href="#" alt="Facebook">
+				<a href="{{ settings.epco_facebook }}" target="_blank" rel="noopener" alt="Facebook">
 					<img src="{{ site.theme.uri }}/dist/img/icons/facebook_icon.svg">
 				</a>
 			</li>
 			<li>
-				<a href="#" alt="Facebook">
+				<a href="{{ settings.epco_twitter }}" target="_blank" rel="noopener" alt="Twitter">
 					<img src="{{ site.theme.uri }}/dist/img/icons/twitter_icon.svg">
 				</a>
 			</li>

@@ -7,57 +7,35 @@
 {% endblock %}
 
 	<body class="{{body_class}}" data-template="base.twig">
-		<header class="header">
-			<nav class="navbar">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-							<div class="navbar-toggle-title">
-								Menu
+		{% block header %}
+			<header class="header">
+				<nav class="navbar">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+								<div class="navbar-toggle-title">
+									Menu
 
-								<div class="hamburg">
-									<span></span>
-									<span></span>
-									<span></span>
+									<div class="hamburg">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
 								</div>
-							</div>
-						</button>
-						<a class="navbar-brand" href="#"><img src="{{ site.theme.uri }}/dist/img/logo.svg"></a>
-					</div>
+							</button>
+							<a class="navbar-brand" href="#"><img src="{{ site.theme.uri }}/dist/img/logo.svg"></a>
+						</div>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="main-nav">
-						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="#">Home</a>
-							</li>
-							<li>
-								<a href="#">About</a>
-							</li>
-							<li>
-								<a href="#">Work</a>
-							</li>
-							<li>
-								<a href="#">Contact</a>
-							</li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-		</header>
-<!-- 		<header class="header" >
-			{% block header %}
-				<div class="wrapper">
-					<h1 class="hdr-logo" role="banner">
-						<a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
-					</h1>
-					<nav id="nav-main" class="nav-main" role="navigation">
-						{% include "menu.twig" with {'menu': menu.get_items} %}
-					</nav>
-				</div>
-			{% endblock %}
-		</header> -->
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="main-nav">
+							{% include "menu.twig" with {'menu': menu.get_items} %}
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</header>
+		{% endblock %}
+
 		{% block content %}
 			Sorry, no content
 		{% endblock %}

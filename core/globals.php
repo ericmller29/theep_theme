@@ -4,6 +4,7 @@ class Globals {
 
 	function __construct(){
 		$this->registerGlobals();
+		$this->registerOptions();
 	}
 
 	function registerGlobals(){
@@ -14,6 +15,10 @@ class Globals {
 			'scripts' => get_template_directory_uri() . '/dist/js',
 			'styles' => get_template_directory_uri() . '/dist/css'
 		);
+	}
+
+	function registerOptions(){
+		add_option( 'myhack_extraction_length', '255', '', 'yes' );
 	}
 }
 $globals = new Globals();

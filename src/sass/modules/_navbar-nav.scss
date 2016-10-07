@@ -38,11 +38,13 @@
 				content: '';
 				height: 3px;
 				background: $brand-primary;
-				width: 100%;
+				width: 60%;
 				position: relative;
 				bottom: 0;
 				opacity: 0;
 				transition: opacity 0.3s;
+				left: 50%;
+				transform: translateX(-50%);
 			}
 		}
 	}
@@ -58,7 +60,7 @@
 		@media (min-width: $screen-sm-min){
 			padding: 15px 15px 10px;
 		}
-		&:hover{
+		&:hover, &:focus{
 			background-color: transparent;
 		}
 	}

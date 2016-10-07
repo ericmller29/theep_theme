@@ -4,7 +4,7 @@
 	position: relative;
 	padding: 13px;
 
-	svg{
+	img{
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -17,11 +17,11 @@
 		padding-left: 45px;
 	}
 
-	&.icon-right svg{
+	&.icon-right img{
 		right: 13px;
 	}
 
-	&.icon-left svg{
+	&.icon-left img{
 		left: 13px;
 	}
 
