@@ -13,6 +13,9 @@ include 'core/theme_settings.php';
 include 'core/plugins.php';
 include 'core/features.php';
 
+update_option('home','http://theep.dev');
+update_option('siteurl','http://theep.dev');
+
 /*
 * The rest of this doc is specific to Timber, not sure if I'll need it so I'm leaving it here.
 */
