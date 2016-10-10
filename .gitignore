@@ -3,3 +3,4 @@ wp-content
 /node_modules/
 /bower_components/
 /dist
+/core/plugins/acf-key.txt
