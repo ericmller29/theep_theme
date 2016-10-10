@@ -11,6 +11,7 @@ include 'core/removes.php';
 include 'core/scripts.php';
 include 'core/theme_settings.php';
 include 'core/plugins.php';
+include 'core/features.php';
 
 /*
 * The rest of this doc is specific to Timber, not sure if I'll need it so I'm leaving it here.
