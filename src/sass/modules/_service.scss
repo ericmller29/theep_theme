@@ -37,7 +37,7 @@
 		background-position: -30px 80px;
 		transition: background-size 0.3s;
 
-		@media (min-width: $screen-sm-min){
+		@media (min-width: 2000px){
 			background-size: 50%;
 			background-position: -30px -50%;
 		}

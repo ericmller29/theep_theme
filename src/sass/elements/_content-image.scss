@@ -1,0 +1,11 @@
+.content-image{
+	border-radius: 10px;
+	overflow: hidden;
+
+	&.alignleft{
+		margin-left: -60px;
+	}
+	&.alignright{
+		margin-right: -60px;
+	}
+}
