@@ -1,6 +1,6 @@
-<div class="{% if item.full_width %}container-fluid{% else %}container{% endif %} {% if not item.gutters %}no-gutters{% endif %}">
+<div class="{% if item.full_width %}container-fluid{% else %}container{% endif %} {% if not item.gutters and item.full_width %}no-gutters{% endif %}">
 	<section>
-		<div class="row{% if not item.gutters %} no-gutters{% endif %}">
+		<div class="row{% if not item.gutters and item.full_width %} no-gutters{% endif %}">
 			<div class="col-xs-12">
 				<h2 class="text-center">{{ item.title }}</h2>
 			</div>

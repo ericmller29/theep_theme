@@ -21,7 +21,7 @@
 			float: none;
 		}
 
-		&.active{
+		&.current-menu-item{
 			background: $brand-primary;
 
 			@media (min-width: $screen-sm-min){
